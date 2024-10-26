@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="orange">
+                WEATHER APP
+            </li>
+            <li><a href="#">Home</a></li>
+            
+            <li><a href="#">Usage guide </a></li>
+            <li><a href="#">About this app</a></li>
+            <li>
+                <input type="text" id="city-input" placeholder="Enter city name" class="form-control">
+                <button id="search-button" class="btn btn-primary mt-2">Search</button>
+            </li>
+        </ul>
+    </nav>
+    <img class="container" src="sunset-clouds-under-grid-aesthetic-i7gg2nbh7ljf0ygm.jpg" width="100%" height="auto">
+    <div class="container my-4">
+        <h1 class="overlay">Weather Dashboard</h1>
+        <div class="quote">Just as the weather changes, so does life.<br>
+            Embrace the seasons and find beauty in<br> every moment.</div>
+            <div class="time"><li id="time-display" class="time-display"></li></div>
+        <div id="search-bar" class="my-4">
+          <input type="text" id="city-input" placeholder="Enter city name" class="form-control">
+          <button id="search-button" class="btn btn-primary mt-2">Search</button>
+        </div>
+        <div id="weather-display" class="mt-4"></div>
+      </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

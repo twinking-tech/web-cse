@@ -1,0 +1,118 @@
+body, .container {
+    margin: 0;
+    padding: 0;
+    background-color: #89cff0; /* Light cyan to match background of image */
+}
+
+.orange {
+    color: orange;
+    font-style: inherit;
+    font-weight: 200;
+    text-align: left;
+}
+
+.overlay {
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(240, 137, 11, 0.815);
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .overlay {
+        font-size: 40px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .overlay {
+        font-size: 60px;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 768px) {
+    .overlay {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .overlay {
+        font-size: 100px;
+    }
+}
+
+/* Ultra-large screens */
+@media (min-width: 1601px) {
+    .overlay {
+        font-size: 200px;
+    }
+}
+
+.navbar {
+    background-color: rgba(20, 60, 80, 0.8); /* Dark blue-green with transparency */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffae42; /* Orange tone for hover effect to match cloud highlights */
+    text-decoration: underline;
+}
+.quote{
+    font-size: medium;
+    text-align: right;
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    transform: translate(135%, 200%);
+    color: rgb(121, 136, 122);
+    font-size: 200%;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+    
+    font-family: 'Segoe UI';
+}
+
+ .time{
+   
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    transform: translate(1130%, 180%);
+    
+    
+} 
+.time-display {
+    background-color: #ebdfd0;
+    font-weight: bold;
+    color: rgb(110, 177, 125);
+    font-size: 24px; /* Increase this value as needed */
+    margin-left: auto; /* Pushes time to the right in the navbar */
+    /* padding: 8px 15px; */
+}
